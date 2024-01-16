@@ -166,6 +166,7 @@ root.title(f"PPRA PDF Download Manager v{APP_VERSION}")
 
 # Set the default size of the window to 600x400 pixels
 root.geometry("460x210")
+root.iconbitmap('logo_ppra.ico')
 
 
 
