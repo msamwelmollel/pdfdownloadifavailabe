@@ -23,7 +23,7 @@ folder_path = os.path.join(os.path.expanduser("~"), 'Desktop', 'Government Docum
 
 def check_for_update(current_version):
     try: 
-        response = requests.get("https://github.com/msamwelmollel/Kireka-Loan-App/releases/latest")
+        response = requests.get("https://github.com/msamwelmollel/pdfdownloadifavailabe/releases/latest")
         
         match = re.search(r'/tag/v(\d+\.\d+\.\d+)', response.text)
         if match:
@@ -41,8 +41,8 @@ def check_for_update(current_version):
 def notify_user(new_version):
     # print(new_version)
     def download():
-        # webbrowser.open("https://github.com/msamwelmollel/Kireka-Loan-App/releases/latest")
-        webbrowser.open(f'https://github.com/msamwelmollel/Kireka-Loan-App/releases/download/v{new_version}/Kireka.Loan.App.exe')
+        webbrowser.open(f'https://github.com/msamwelmollel/pdfdownloadifavailabe/releases/download/v{new_version}/PPRA.PDF.Download.Manager.exe')
+        
         notification_window.destroy()
 
     def ignore():
@@ -222,8 +222,7 @@ progress.grid(row=7, column=0, columnspan=3, sticky='ew', padx=10, pady=5)
 
 
 
-# The base URL of the website (change this to the website you're interested in)
-# base_url = 'https://www.ppra.go.tz/publications/tanzania-procurement-journal?page=1'
+
 
 
 
