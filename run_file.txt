@@ -1,0 +1,1 @@
+pyinstaller --onefile --icon=logo_ppra.ico --noconsole DownloadManagerGovernmentpdf.py
