@@ -66,7 +66,9 @@ def find_pdf_links(url):
     a_tags = soup.find_all('a')
     
     # Filter out links to PDF files
-    pdf_links = [link.get('href') for link in a_tags if link.get('href') and link.get('href').endswith('.pdf')]
+    # pdf_links = [link.get('href') for link in a_tags if link.get('href') and link.get('href').endswith('.pdf')]
+    pdf_links = [link.get('href') for link in a_tags if link.get('href') and (link.get('href').endswith('.pdf') or link.get('href').endswith('.doc') or link.get('href').endswith('.docx'))]
+    
     return pdf_links
 
 
@@ -157,7 +159,7 @@ root = tk.Tk()
 
 
 # app_version.py
-APP_VERSION = "1.0.5"
+APP_VERSION = "1.0.6"
 new_version = check_for_update(APP_VERSION)
 if new_version:
     root.after(1000, notify_user, new_version)  # Call notify_user after the mainloop starts
