@@ -159,7 +159,7 @@ root = tk.Tk()
 
 
 # app_version.py
-APP_VERSION = "1.0.6"
+APP_VERSION = "1.0.5"
 new_version = check_for_update(APP_VERSION)
 if new_version:
     root.after(1000, notify_user, new_version)  # Call notify_user after the mainloop starts

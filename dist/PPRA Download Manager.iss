@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "PPRA PDF Download Manager"
-#define MyAppVersion "1.0.5"
+#define MyAppVersion "1.0.6"
 #define MyAppPublisher "MasaiiTech"
 #define MyAppURL "https://msamwelmollel.github.io/"
 #define MyAppExeName "DownloadManagerGovernmentpdf.exe"
