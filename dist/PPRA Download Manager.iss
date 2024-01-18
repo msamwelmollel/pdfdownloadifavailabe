@@ -7,7 +7,7 @@
 #define MyAppURL "https://msamwelmollel.github.io/"
 #define MyAppExeName "DownloadManagerGovernmentpdf.exe"
 #define MyAppAssocName MyAppName + " File"
-#define MyAppAssocExt ".exe"
+#define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
 
 [Setup]
